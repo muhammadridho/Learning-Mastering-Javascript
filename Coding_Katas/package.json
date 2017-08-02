@@ -1,0 +1,14 @@
+{
+  "name": "Coding_Katas",
+  "version": "1.0.0",
+  "description": "Learning Practice Coding Katas",
+  "main": "index.js",
+  "author": "ridho",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^20.0.4"
+  },
+  "scripts" : {
+    "test" : "jest"
+  }
+}
