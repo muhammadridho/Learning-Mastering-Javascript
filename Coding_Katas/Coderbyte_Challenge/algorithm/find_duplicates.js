@@ -17,3 +17,5 @@ let duplicates = (arrays) => {
 }
 
 console.log(duplicates([1,3,5,7,5,1]))
+
+module.exports = duplicates
