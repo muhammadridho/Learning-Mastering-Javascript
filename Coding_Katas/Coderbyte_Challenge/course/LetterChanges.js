@@ -11,7 +11,11 @@ let getVowel = (alphabet) => 'aiueo'.indexOf(alphabet) !== -1 ?
 				    alphabet.toUpperCase() :
 				    alphabet
 
+let toLowerCase = (alphabet) => alphabet.toLowerCase()
+
+let joinArray = (data) => data
+
 let LetterChanges = R.compose(R.map(getVowel),R.map(plusCase))
 
 
-console.log(LetterChanges('test'))
+console.log(LetterChanges('test').join(''))
