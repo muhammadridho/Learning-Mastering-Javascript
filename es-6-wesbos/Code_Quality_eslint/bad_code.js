@@ -27,3 +27,10 @@ Promise
   .then((responses) => {
     console.log(responses);
   });
+
+const wes = {
+  name: 'wes',
+  cool: true,
+};
+
+console.log(wes);
