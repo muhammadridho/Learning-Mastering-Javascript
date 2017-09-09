@@ -15,13 +15,24 @@ var Stack = function(){
     //min count
     this.count --;
 
-    let result = this.storeage[this.count];
+    let result = this.storage[this.count];
     delete this.storage[this.count];
 
     return result;
+  }
+
+  this.peek = function(){
+    return this.storage[this.count - 1];
   }
 
   this.size = function(){
     return this.count;
   }
 }
+
+var myStack = new Stack();
+myStack.push(1);
+myStack.push(2);
+
+console.log(myStack.peek());
+console.log(myStack.pop());
