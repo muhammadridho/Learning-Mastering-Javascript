@@ -2,13 +2,11 @@ let word = 'racecard';
 
 function reverseWord(word){
     if (!word) return '';
-    
+
     let rword = '';
-
     for(let i = word.length; i > 0; i--){
-	rword += word[i];
+	   rword += word[i];
     }
-
     return rword;
 }
 
@@ -21,16 +19,9 @@ function compose(...functions){
     return function(param){
     let temp = '';
 
-    for(let i = functions.length - 1; i >= 0; i--){
-	
-	 if (i === functions.length - 1){
-	   temp = functions[i-1](functions[i](param));
-	   i -= 1; 
-        }else {
-	    temp = functions[i](temp);
-	}
-	
-    }
+    for(let i = functions.length - 1; i >= 1; i--){
+	        temp = functions[i - 1]( i === functions.length - 1 ? functions[i](param) : temp);
+     }
     return temp;
    }
 }
