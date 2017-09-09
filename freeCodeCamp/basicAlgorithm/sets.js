@@ -87,5 +87,9 @@ setA.add("a");
 setB.add("b");
 setB.add("c");
 setB.add("a");
-setB.add("a");
+setB.add("d");
 setA.add("a");
+
+console.log(setA.subset(setB));
+console.log(setA.intersection(setB).values());
+console.log(setB.difference(setA).values())
