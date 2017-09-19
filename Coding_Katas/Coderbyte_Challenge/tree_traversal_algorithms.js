@@ -31,4 +31,22 @@ function pre_order(root, nodes = []){
     return nodes;
 }
 
+function post_order(root, nodes){
+    if (root && root.left){
+	post_order(root.left, nodes);
+    }
+    if (root && root.right){
+	post_order(root.right, nodes);
+    }
+    nodes.push(root.data);
+    return nodes;
+}
+
+function level_order(root, nodes){
+    var queue = [root];
+    console.log(queue.length);
+}
+
+level_order(root, []);
 console.log(pre_order(root, []));
+console.log(post_order(root, []));
