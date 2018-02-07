@@ -13,4 +13,6 @@ let charToString = str =>
                     .inspect()
 
 
-console.log(charToString(' 64 '))
+console.log(charToString([
+    '64', '54'
+]))
