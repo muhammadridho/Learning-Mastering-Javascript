@@ -22,9 +22,9 @@ const tryCatch = f => {
 }
 
 const getPort = () =>
-    tryCatch(() => fs.readFileSync('config.json', 'utf8'))
+    tryCatch(() => fs.readFileSync('confi.json', 'utf8'))
         .chain(data  => tryCatch(() =>JSON.parse(data)))
-        .fold(e  => e,
+        .fold(e  => 'errr',
               c => c.port)
         
 console.log(getPort())
