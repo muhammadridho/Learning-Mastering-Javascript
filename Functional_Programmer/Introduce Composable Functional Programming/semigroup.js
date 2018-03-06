@@ -25,9 +25,9 @@ const All = x =>
         inspect: () => x 
     })
 
-const res = Sum(1).concat(Sum(2));
-const next = First('test').concat('S')
-const checkTrue = All(true).concat(All(true))
+// const res = Sum(1).concat(Sum(2));
+// const next = First('test').concat('S')
+// const checkTrue = All(true).concat(All(true))
 
-console.log(res, next, checkTrue);
+// console.log(res, next, checkTrue);
 module.exports = { Sum, First, All };
