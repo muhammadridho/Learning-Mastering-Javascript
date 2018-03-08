@@ -5,5 +5,8 @@
   "license": "MIT",
   "devDependencies": {
     "immutable-ext": "^1.1.2"
+  },
+  "dependencies": {
+    "data.task": "^3.1.1"
   }
 }

@@ -5,7 +5,8 @@ const Right = x => ({
     concat: o => 
         o.fold(e => left(e),
                r => Right(x.concat(r))),
-    foldMap: (f, eH) => x.reduce((acc, y) => acc + (y ? f(y).inspect() : eH().inspect()), 0),
+    foldMap: (f, eH) => x.reduce((acc, y) => 
+        acc + (y ? f(y).inspect() : eH().inspect()), 0),
     inspect: _ => x
 })
 
